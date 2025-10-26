@@ -416,3 +416,151 @@ h2::after {
 html {
     scroll-behavior: smooth;
 }
+
+
+
+/* /////////////////////////////////////////////////*/
+
+/* About Section */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background: #282828;
+    padding: 3rem;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+.about-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #00ff88;
+    flex-shrink: 0;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    color: #b0b0b0;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-card {
+    background: #282828;
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    color: #00ff88;
+    font-weight: 600;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: scale(1.1);
+}
+
+/* Experience Section */
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.experience-card {
+    background: #282828;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.experience-card:hover {
+    transform: translateY(-8px);
+}
+
+.experience-card h3 {
+    color: #00ff88;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.experience-card .company {
+    color: #b0b0b0;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+
+.experience-card p {
+    color: #e0e0e0;
+}
+
+/* Education Section */
+.education-card {
+    background: #282828;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.education-card h3 {
+    color: #00ff88;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.education-card .university {
+    color: #b0b0b0;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+
+.education-card p {
+    color: #e0e0e0;
+}
+
+/* Contact Info */
+.contact-info {
+    background: #282828;
+    padding: 2.5rem;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    margin-bottom: 0.8rem;
+}
+
+.contact-info a {
+    color: #00ff88;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: #00cc70;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-img {
+        margin-bottom: 1.5rem;
+    }
+}
+
+
