@@ -471,7 +471,7 @@ footer {
 
 @media (max-width: 576px) {
     header {
-        padding: 0.8rem 0;
+        padding: 0;
     }
     .navbar-toggler {
         display: block;
@@ -494,6 +494,7 @@ footer {
     }
     .nav-menu.active {
         display: flex;
+        text-align: center;
     }
     .nav-menu li a {
         font-size: 0.9rem;
