@@ -12,8 +12,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Toggle Mobile Menu
-document.querySelector('.navbar-toggler').addEventListener('click', () => {
+document.querySelector('.navbar-toggler').addEventListener('click', (e) => {
+    e.stopPropagation(); // Prevent click from bubbling to document
     document.querySelector('.nav-menu').classList.toggle('active');
+});
+
+// Close Mobile Menu on Outside Click
+document.addEventListener('click', (e) => {
+    const navMenu = document.querySelector('.nav-menu');
+    const toggler = document.querySelector('.navbar-toggler');
+    if (navMenu.classList.contains('active') && !navMenu.contains(e.target) && !toggler.contains(e.target)) {
+        navMenu.classList.remove('active');
+    }
 });
 
 // Fade-in on Scroll
