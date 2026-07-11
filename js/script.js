@@ -10,18 +10,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-// Form Submit Placeholder
-document.querySelector('form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('پیام شما ارسال شد! به زودی با شما تماس می‌گیریم. 😊');
-});
 
 // Toggle Mobile Menu
 document.querySelector('.navbar-toggler').addEventListener('click', (e) => {
     e.stopPropagation(); // Prevent click from bubbling to document
     document.querySelector('.nav-menu').classList.toggle('active');
 });
-
 
 // Close Mobile Menu on Outside Click
 document.addEventListener('click', (e) => {
@@ -40,6 +34,5 @@ const observer = new IntersectionObserver(entries => {
         }
     });
 }, { threshold: 0.1 });
+
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-
